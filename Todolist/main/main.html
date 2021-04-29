@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoList</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div id='bg'></div>
+  
+  <div id='modal'>
+    <div id='top'> 
+      <div id='pageTitle'>My List</div>
+      <button id='close'>X</button>
+    </div>
+    
+    <div id='bottom'></div>
+
+  </div>
+
+  <div class='header'>
+
+    <button id='myPage'>MyList</button>
+
+  </div>
+
+  <div id='main'>
+
+    <div id='title'>To Do List</div>
+    
+    <div id='input'>
+      
+      <input id="typing" type="text" onkeyup="if(window.event.keyCode==13){addItem()}">
+
+      <button id='enter'>
+        <img src='check.jpg' id='enterButton'>
+      </button>
+
+    </div>
+
+  </div>
+
+  <div id='list'></div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
