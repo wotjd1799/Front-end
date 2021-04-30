@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide</title>
+  <link rel='stylesheet' href='./main.css'>
+</head>
+<body>
+  <div id='slideDiv1'>
+    <ul id='auto'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <a></a>
+  </div>
+
+  <div  id='slideDiv2'>
+      <ul id='passivity'>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    <button id='prev' onclick='moveSlide(-1)'>&#10094</button>
+    <button id='next' onclick='moveSlide(1)'>&#10095</button>
+  </div>
+  <div id='dots'>
+      <span id='1' class='dot' onclick='dotSlide(1)'></span>
+      <span id='2' class='dot' onclick='dotSlide(2)'></span>
+      <span id='3' class='dot' onclick='dotSlide(3)'></span>
+      <span id='4' class='dot' onclick='dotSlide(4)'></span>
+      <span id='5' class='dot' onclick='dotSlide(5)'></span>
+  </div>
+
+</body>
+<script src='./autoSlide.js'></script>
+<script src='./passivitySlide.js'></script>
+</html>
